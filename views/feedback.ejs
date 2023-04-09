@@ -1,0 +1,127 @@
+<%- include("partials/header"); -%>
+<div class="container-fluid">
+
+
+<form  action="/feedback" method="post">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" name="name" value="" placeholder="Student Name..">
+    </div>
+
+    <div class="form-group">
+        <label for="sub">Subject:</label>
+        <select name="sub" >
+            <option value="DM" >Discrete Mathematics</option>
+            <option value="DE">Digital Electronics</option>
+            <option value="OOP">OOPs </option>
+            <option value="EEC">EEC</option>
+            <option value="IDS">IDS</option>
+            <option value="DBMS">DBMS</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="sec">Section:</label>
+        <select name="sec">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+            <option value="F">F</option>
+            <option value="G">G</option>
+            <option value="H">H</option>
+            <option value="I">I</option>
+            <option value="J">J</option>
+
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="staff">Teacher:</label>
+        <select name="staff">
+            <option value="Sidhhant Kumar Sahu" >Sidhhant Kumar Sahu</option>
+            <option value="Dr. Ribhu Abhusan Panda">Dr. Ribhu Abhusan Panda</option>
+            <option value="Dr. Bandita Sahu"> Dr. Bandita Sahu</option>
+            <option value="Debasish Patro">Debasish Patro</option>
+            <option value="Dr .Nilambar Sethi">Dr .Nilambar Sethi</option>
+            <option value="Sujit Kumar Patro">Sujit Kumar Patro</option>
+        </select>
+    </div>
+    <p><b><em><h4>Give your Feed-back</h4></em></b></p>
+     <!-- question no1 -->
+    <div class="form-group">
+        <label for=""><b> 1: Do you under stand the lectures delivered by the teacher ?</b></label>
+        <input type="radio" id="excel" name="q1" value="excellent">
+        <label for="excel">excellent</label>
+        <input type="radio" id="good" name="q1" value="good">
+        <label for="good">Good</label>
+        <input type="radio" id="avg" name="q1" value="Average">
+        <label for="avg">Average</label>
+        <input type="radio" id="poor" name="q1" value="poor">
+        <label for="poor">Poor</label>
+    </div>
+    <!-- question no2  -->
+    <div class="form-group">
+        <label for=""><b> 2: How do you rate the communication skills/teaching skill of the teacher ?</b></label>
+        <input type="radio" id="excel" name="q2" value="excellent">
+        <label for="excel">excellent</label>
+        <input type="radio" id="good" name="q2" value="good">
+        <label for="good">Good</label>
+        <input type="radio" id="avg" name="q2" value="Average">
+        <label for="avg">Average</label>
+        <input type="radio" id="poor" name="q2" value="poor">
+        <label for="poor">Poor</label>
+    </div>
+     <!-- question no3 -->
+    <div class="form-group">
+        <label for=""><b> 3: Is the lecture lively, interactive, interesting ?</b></label>
+        <input type="radio" id="excel" name="q3" value="excellent">
+        <label for="excel">excellent</label>
+        <input type="radio" id="good" name="q3" value="good">
+        <label for="good">Good</label>
+        <input type="radio" id="avg" name="q3" value="Average">
+        <label for="avg">Average</label>
+        <input type="radio" id="poor" name="q3" value="poor">
+        <label for="poor">Poor</label>
+
+    </div>
+    <!-- question no4 -->
+    <div class="form-group">
+        <label for=""><b> 4: Does the teacher give additional information or example to help understanding the topic  ?</b></label>
+        <input type="radio" id="excel" name="q4" value="excellent">
+        <label for="excel">excellent</label>
+        <input type="radio" id="good" name="q4" value="good">
+        <label for="good">Good</label>
+        <input type="radio" id="avg" name="q4" value="Average">
+        <label for="avg">Average</label>
+        <input type="radio" id="poor" name="q4" value="poor">
+        <label for="poor">Poor</label>
+    </div>
+    <!-- question no5 -->
+    <div class="form-group">
+        <label for=""><b> 5: Does the teacher like you are asking question in the class and solving your difficulties ?</b></label>
+        <input type="radio" id="excel" name="q5" value="excellent">
+        <label for="excel">excellent</label>
+        <input type="radio" id="good" name="q5" value="good">
+        <label for="good">Good</label>
+        <input type="radio" id="avg" name="q5" value="Average">
+        <label for="avg">Average</label>
+        <input type="radio" id="poor" name="q5" value="poor">
+        <label for="poor">Poor</label>
+    </div>
+    <p><b><em><h4>Other Feed-back</h4></em></b></p>
+    <p><label for="other"></label></p>
+    <div class="form-group">
+        <textarea name="other" rows="6" cols="100"></textarea>
+
+    </div>
+    <!-- /submit button -->
+    <button type="submit" class="btn btn-dark " id="log">Post</button>
+</form>
+
+
+</div>
+
+
+
+<%- include("partials/footer"); -%>
